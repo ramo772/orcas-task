@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "b1e2caf2-3e8c-4b85-bdba-ccc9263055a2",
+		"name": "orcas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17202639"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzAzODYwOGE5M2VkYWY1ZmU2YmRmMWM5MTMxNmQ3MDBhZmEwNmU4ODVlN2ExYjMzZjJiZmY4YmUyMDJkMjM4OTRkMjhlMThhNzM5NTIzMGIiLCJpYXQiOjE2NjI1NjQ0NTUuNjMyODQyLCJuYmYiOjE2NjI1NjQ0NTUuNjMyODQ3LCJleHAiOjE2OTQxMDA0NTUuNjI0ODg3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.QNN6wYWmPw3ZAKvvNdfX1EHbKtBklgPcgurpPmO_o5LJVRIQqPn1knLQ0p5g-6o7ZL11U4VI2BCWLgll70gKT-F-BTRqfw7lOO1TwDWA_rpIV0v0l6QpiyoCeejfymmCji4qBzHsIH3LOX2UsGRXt4fx8oY8apP_DcPR7lQ08paK1-dp_f8QD0WBrhTCxH_WSLRb8DH1n8ilCpLO9vPdq0YlKlI9zjSRzJrfXjcGlMCK9gyPy7THEj7JuIUk8BK1nyJJiukuz8F_NuLGlWB7MuWdryYO9JONWi0KU_SB7jwEjssqz0_SN7esS58QSfRSGiM47wSuIlRwbrkfE_-Ff-KBxnS9ur3QxsGfxRvD6e4Sxoyyy35RVy6ecrysuE_w3EwNJePCVUXDdjA69h2Ff_iATQuQOYtc7XXZq0nQkmMLNxlgCd-oBPcSPiSHELaeXyoQPKhmVQrWVUX4ycZKxdUxpBuuuZGygIjNrWBdXYj6u49i5K-g3XcWunAIijs3wdX8ahe4XQiBfkQYr59ed94lMqA41SNBK4or4BlIVwIlwdOR6HdipxX9UNANFGnK_FsES8hXP6RL5BFtJk4xhJ7-4bqoNgRYeL_WxYhOy_J2RB7Sgbut5RU7HhmCIqOj-b1dj2x6V54s7TZwc6OzgrsjxGpgkH9AH_1JJ9F1a3Y"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "users_search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzAzODYwOGE5M2VkYWY1ZmU2YmRmMWM5MTMxNmQ3MDBhZmEwNmU4ODVlN2ExYjMzZjJiZmY4YmUyMDJkMjM4OTRkMjhlMThhNzM5NTIzMGIiLCJpYXQiOjE2NjI1NjQ0NTUuNjMyODQyLCJuYmYiOjE2NjI1NjQ0NTUuNjMyODQ3LCJleHAiOjE2OTQxMDA0NTUuNjI0ODg3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.QNN6wYWmPw3ZAKvvNdfX1EHbKtBklgPcgurpPmO_o5LJVRIQqPn1knLQ0p5g-6o7ZL11U4VI2BCWLgll70gKT-F-BTRqfw7lOO1TwDWA_rpIV0v0l6QpiyoCeejfymmCji4qBzHsIH3LOX2UsGRXt4fx8oY8apP_DcPR7lQ08paK1-dp_f8QD0WBrhTCxH_WSLRb8DH1n8ilCpLO9vPdq0YlKlI9zjSRzJrfXjcGlMCK9gyPy7THEj7JuIUk8BK1nyJJiukuz8F_NuLGlWB7MuWdryYO9JONWi0KU_SB7jwEjssqz0_SN7esS58QSfRSGiM47wSuIlRwbrkfE_-Ff-KBxnS9ur3QxsGfxRvD6e4Sxoyyy35RVy6ecrysuE_w3EwNJePCVUXDdjA69h2Ff_iATQuQOYtc7XXZq0nQkmMLNxlgCd-oBPcSPiSHELaeXyoQPKhmVQrWVUX4ycZKxdUxpBuuuZGygIjNrWBdXYj6u49i5K-g3XcWunAIijs3wdX8ahe4XQiBfkQYr59ed94lMqA41SNBK4or4BlIVwIlwdOR6HdipxX9UNANFGnK_FsES8hXP6RL5BFtJk4xhJ7-4bqoNgRYeL_WxYhOy_J2RB7Sgbut5RU7HhmCIqOj-b1dj2x6V54s7TZwc6OzgrsjxGpgkH9AH_1JJ9F1a3Y"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"search\":\"aaron\"\r\n}"
+						},
+						"url": "http://127.0.0.1:8000/api/search"
+					},
+					"response": []
+				},
+				{
+					"name": "users_search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"search\":\"a\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "dasdsadas",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "14|VgUtoKYDPFwRx1g9gnJWo4WddwnwcKbI4jCuepK3"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"omar@gmail.com\",\r\n    \"password\":\"wesdwesd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"omar\",\r\n    \"email\":\"zczxczxc@gmail.com\",\r\n    \"password\":\"wesdwesd\"\r\n}"
+						},
+						"url": "http://127.0.0.1:8000/api/register"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Api",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    {\r\n        \"firstName\":\"firstName\",\r\n        \"lastName\":\"lastName\",\r\n        \"avatar\":\"avatar\",\r\n        \"email\":\"email\",\r\n        \"link\" : \"https://60e1b5fc5a5596001730f1d6.mockapi.io/api/v1/users/users_1\"\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/apis"
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch without schaduler",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    {\r\n        \"firstName\":\"firstName\",\r\n        \"lastName\":\"lastName\",\r\n        \"avatar\":\"avatar\",\r\n        \"email\":\"email\",\r\n        \"link\" : \"https://60e1b5fc5a5596001730f1d6.mockapi.io/api/v1/users/users_1\"\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/apis"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
