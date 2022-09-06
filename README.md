@@ -69,6 +69,6 @@ Searching endpoint http://127.0.0.1:8000/api/search
 
    ![image](https://user-images.githubusercontent.com/76254252/188676037-03556ef5-a0ca-404b-9003-51088f87a57c.png) 
 
-You cab find the postman collection in the project folder 
+You can find the postman collection in the project folder 
 
 
