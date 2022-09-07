@@ -96,7 +96,7 @@ class UserController extends Controller
 
     public function search(Request $request)
     {
-        // get users that are like the search value
+        // get users that are like the request->search value
         $search_result =DB::select("select * from users where firstName like '%$request->search%' or lastName like '%$request->search%' or email like '%$request->search%' ");
         return  $this->success_response(UserResource::collection($search_result));
 
