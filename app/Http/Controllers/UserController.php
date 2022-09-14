@@ -96,10 +96,10 @@ class UserController extends Controller
     {
         foreach ($users as $user) {
             $validator = Validator::make($user, [
-                'firstName' => ['required'],
-                'lastName' => ['required'],
-                'avatar' => ['required'],
-                'email' => ['unique:users,email']
+                $schema[0]->firstName => ['required'],
+                $schema[0]->lastName => ['required'],
+                $schema[0]->avatar => ['required'],
+                $schema[0]->email => ['unique:users,email']
             ]);
             if (!$validator->fails()) {
                 DB::table('users')->insert([
