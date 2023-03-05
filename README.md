@@ -25,7 +25,7 @@ Generate a new application key
 
     php artisan key:generate
 
-
+    npm run dev
 
 Run the database migrations (**Set the database connection in .env before migrating**)
 
